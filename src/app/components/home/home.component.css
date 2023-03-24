@@ -1,0 +1,23 @@
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.image img{
+    height: 20vh;
+    background-position: center;
+    background-size: cover;
+    width: 30vh;
+    border-radius: 4%;
+}
+
+.image p{
+    align-items: center;
+    text-align: center;
+    color: darkcyan;
+}
+
+h2{
+    margin-bottom: 30px;
+}

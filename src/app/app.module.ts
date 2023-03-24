@@ -11,6 +11,7 @@ import { HeaderComponent } from './components/layout/header/header.component';
 import { ContentComponent } from './components/layout/content/content.component';
 import { AsideComponent } from './components/layout/aside/aside.component';
 import { FooterComponent } from './components/layout/footer/footer.component';
+import { NewyorkComponent } from './components/newyork/newyork.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FooterComponent } from './components/layout/footer/footer.component';
     HeaderComponent,
     ContentComponent,
     AsideComponent,
-    FooterComponent
+    FooterComponent,
+    NewyorkComponent
   ],
   imports: [
     BrowserModule,
