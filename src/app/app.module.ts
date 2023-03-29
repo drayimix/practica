@@ -12,6 +12,10 @@ import { ContentComponent } from './components/layout/content/content.component'
 import { AsideComponent } from './components/layout/aside/aside.component';
 import { FooterComponent } from './components/layout/footer/footer.component';
 import { NewyorkComponent } from './components/newyork/newyork.component';
+// import { MegaMenuModule } from 'primeng/megamenu';
+import { TieredMenuModule } from 'primeng/tieredmenu';
+import { MenuModule } from 'primeng/menu';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -28,7 +32,11 @@ import { NewyorkComponent } from './components/newyork/newyork.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    // MegaMenuModule,
+    TieredMenuModule,
+    MenuModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
