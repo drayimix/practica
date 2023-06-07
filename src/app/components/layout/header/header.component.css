@@ -1,6 +1,48 @@
-.encabezado{
-    display: flex;
-    height: 100%;
-    justify-content: space-between;
-    align-items: center;
+/* h1{
+  color: darkgoldenrod;
+}
+
+section{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8dc3d8;
+}
+
+.logo{
+  flex-grow: 1;
+}
+
+.logo img{
+  width: 150px;
+  height: 152px;
+  padding: 1vh;
+}
+
+
+.tittle{
+  flex-grow: 1;
+}
+
+nav{
+  flex-grow: 3;
+} */
+
+section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  place-items: center;
+}
+
+.logo img{
+  width: 100px;
+  height: 100px;
+}
+
+.title{
+  font-family: 'Righteous';
+  flex-grow: 3;
+  color: #8B0000;
 }

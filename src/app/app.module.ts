@@ -10,6 +10,7 @@ import { ContentComponent } from './components/layout/content/content.component'
 import { FooterComponent } from './components/layout/footer/footer.component';
 
 import { PanelMenuModule } from 'primeng/panelmenu';
+import { MenubarModule } from 'primeng/menubar';
 
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -26,8 +27,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    PanelMenuModule
-
+    PanelMenuModule,
+    MenubarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
