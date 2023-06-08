@@ -1,33 +1,34 @@
-/* h1{
+ /* h1{
   color: darkgoldenrod;
-}
+} */
 
-section{
+/* section{
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
   background-color: #8dc3d8;
-}
+} */
 
-.logo{
+/* .logo{
   flex-grow: 1;
-}
+} */
 
-.logo img{
+/* .logo img{
   width: 150px;
   height: 152px;
   padding: 1vh;
-}
+} */
 
 
-.tittle{
+/* .tittle{
   flex-grow: 1;
-}
+} */
 
 nav{
-  flex-grow: 3;
-} */
+  padding: 20px;
+  justify-content: center;
+}
 
 section {
   display: flex;
@@ -37,12 +38,17 @@ section {
 }
 
 .logo img{
-  width: 100px;
-  height: 100px;
+  max-width: 1000px;
+  /* width: 100px; */
+  height: 130px;
 }
 
 .title{
   font-family: 'Righteous';
-  flex-grow: 3;
+  flex-grow: 1;
   color: #8B0000;
+}
+
+.title img{
+  max-width: 200px;
 }

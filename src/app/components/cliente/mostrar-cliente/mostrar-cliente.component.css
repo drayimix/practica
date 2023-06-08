@@ -1,0 +1,21 @@
+a{
+  text-decoration: none;
+}
+.mr-1{
+  margin-left: 1px;
+}
+
+#eliminar{
+  background-color: brown;
+  border-color: brown;
+}
+
+#editar{
+ background-color: #68e222;
+ border-color: #68e222;
+}
+
+#crear{
+  background-color: #FFC72C;
+  border-color: #FFC72C;
+}

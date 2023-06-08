@@ -1,3 +1,7 @@
+*{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 main {
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -19,21 +23,27 @@ main {
     /* border: 1px solid #a8dadc; */
     text-align: center;
     /* background: #1abc9c; */
-    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    /* background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%); */
+    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
     color: white;
+    /* margin-top: 0.1em; */
   }
 
   section {
     grid-area: section;
     /* border: 1px solid #a8dadc; */
-    background-color: white;
+    /* background-color: white; */
     /* padding: 20px; */
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 0.5em;
   }
 
   footer{
     grid-area: footer;
     /* border: 1px solid #a8dadc; */
-    background-color: #ddd;
+    /* background-color: #ddd; */
+    margin-top: 20px;
     /* padding: 20px; */
-    text-align: center;
+    /* text-align: center; */
   }

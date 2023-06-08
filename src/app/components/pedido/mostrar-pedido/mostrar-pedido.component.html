@@ -1,0 +1,39 @@
+<!-- <p>mostrar-pedido works!</p> -->
+<div class="flex align-items-center justify-content-end bg-cyan-100">
+  <a pButton pRipple label="Agregar Pedido" id="crear" icon="pi pi-inbox" class="bg-cyan-600" [routerLink]="['/addproductos']"></a>
+</div>
+
+<div>
+  <p-toast></p-toast>
+</div>
+
+<p-table [value]="pedidos">
+  <ng-template pTemplate="header">
+    <tr>
+      <th>ID</th>
+      <th>Fecha Pedido</th>
+      <th>Cantidad</th>
+      <th>Valor</th>
+      <th>Cliente</th>
+      <th>Producto</th>
+      <th>Acciones</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-pedidos>
+    <tr>
+      <td>{{pedidos.id}}</td>
+      <td>{{pedidos.fechaPedido}}</td>
+      <td>{{pedidos.cantidadPedido}}</td>
+      <td>{{pedidos.valorPedido}}</td>
+      <td>{{pedidos.cliente.nombreCliente}}</td>
+      <td>{{pedidos.producto.nombreProducto}}</td>
+      <td>
+        <p-button icon="pi pi-print" class="bg-cyan-600 mr-1" (click)="imprimir(pedidos.id)"></p-button>
+        <a pButton pRipple icon="pi pi-file-edit" id="editar" class="bg-cyan-600 mr-1" [routerLink]="['/productos/edit/', pedidos.id]">
+        </a>
+        <button type="button" pButton pRipple icon="pi pi-times" id="eliminar" class="bg-cyan-600 mr-1" (click)="eliminarPedido(pedidos.id)">
+        </button>
+      </td>
+    </tr>
+  </ng-template>
+</p-table>

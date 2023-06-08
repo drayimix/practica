@@ -15,19 +15,36 @@ export class HeaderComponent implements OnInit{
   ngOnInit(){
     this.items = [
       {
-        label: 'login',
-        icon: 'pi pi-fw pi pi-user'
+        label: 'Productos',
+        icon: 'pi pi-fw pi pi-box',
+        routerLink: '/productos'
       },
       {
-        label: 'Register',
-        icon: 'pi pi-fw pi-user-edit'
+        label: 'Pedidos',
+        icon: 'pi pi-fw pi-shopping-cart',
+        routerLink: '/pedidos'
       },
       {
-        label: 'Settings',
-        icon: 'pi pi-spin pi-cog'
+        label: 'Clientes',
+        icon: 'pi pi-fw pi pi-user',
+        routerLink: '/clientes'
       },
       {
-        label: 'Help',
+        label: 'Ajustes',
+        icon: 'pi pi-spin pi-cog',
+        items: [
+          {
+            label: 'Generales',
+            icon: 'pi pi-briefcase'
+          },
+          {
+            label: 'Cerrar Sesion',
+            icon: 'pi pi-times'
+          },
+        ]
+      },
+      {
+        label: 'Ayuda',
         icon: 'pi pi-info-circle'
       }
     ]
